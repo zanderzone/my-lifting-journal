@@ -1,8 +1,8 @@
 import React from "react";
 
 const Sidebar = () => (
-  <div className="col-md-2 hidden-xs-down">
-    <ul className="nav nav-list">
+  <div className="col-md-2">
+    <ul className="nav nav-tabs nav-stacked">
       <li className="nav-header">Navigation</li>
     </ul>
   </div>

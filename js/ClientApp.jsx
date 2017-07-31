@@ -1,21 +1,28 @@
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
+import styled from "styled-components";
 import TopNavigation from "./TopNavigation";
 import Sidebar from "./Sidebar";
 import Home from "./Home";
 
 // const FourOhFour = () => <h1>404</h1>;
 
+const BodyPadding = styled.div`
+  padding-top: 2px;
+`;
+
 const App = () => (
   <BrowserRouter>
     <div className="container">
       <div className="row">
         <TopNavigation />
-      </div>
-      <div className="row">
-        <Sidebar />
-        <Route path="/" component={Home} />
+        <BodyPadding>
+          <div className="row">
+            <Sidebar />
+            <Route path="/" component={Home} />
+          </div>
+        </BodyPadding>
       </div>
     </div>
   </BrowserRouter>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Home = () => (
-  <div className="jumbotron">
+  <div className="col-md-10">
     <div className="container">
       <div className="row">
         <h1>Welcome!</h1>
